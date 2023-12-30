@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disc Dice</title>
+</head>
+
+<body>
+    <div>
+        <H1>Disc Dice</H1>
+        <style>
+            .off-screen {
+                position: absolute;
+                left: -9999px;
+            }
+        </style>
+
+        <ul class="off-screen" id="discList">
+            <li>Putter</li>
+            <li>Midrange</li>
+            <li>Driver</li>
+            <li>Stable</li>
+            <li>Flippy</li>
+            <li>Wild</li>
+        </ul>
+
+        <ul class="off-screen" id="throwList">
+            <li>Backhand</li>
+            <li>Forehand</li>
+            <li>Roller</li>
+            <li>Hyzer</li>
+            <li>Anhyzer</li>
+            <li>Wild</li>
+
+        </ul>
+
+        <script src="index.js"></script>
+
+        <button onclick="printRandomItem()">Roll Dice</button>
+
+        <div id="randomDiscDisplay"></div>
+        <div id="randomThrowDisplay"></div>
+
+    </div>
+</body>
+
+</html>
